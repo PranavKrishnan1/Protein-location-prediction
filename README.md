@@ -19,6 +19,6 @@ The various attributes are:
 Dataset is obtained from UCI Machine Learning Repository. (https://archive.ics.uci.edu/ml/datasets/Yeast) 
 
 The dataset was created and maintained by: 
-Kenta Nakai 
-Institue of Molecular and Cellular Biology 
-Osaka, University 
+Kenta Nakai, 
+Institue of Molecular and Cellular Biology,
+Osaka University 
