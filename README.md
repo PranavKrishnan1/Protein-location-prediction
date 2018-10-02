@@ -3,7 +3,7 @@ A program written to accurately predict the location of a specific protein in di
 
 This program uses the caret package in R to try and predict the location of a protein.
 
-The analysis develops and a function with 8 attributes as variables and predicts the localisation of protein.
+The program analyses and develops a function with the 8 attributes as variables and predicts the localisation of protein.
 
 The various attributes are: 
 1. Sequence Name: Accession number for the SWISS-PROT database (not used in the algorithm).
