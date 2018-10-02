@@ -6,7 +6,7 @@ This program uses the caret package in R to try and predict the location of a pr
 The program analyses and develops a function with the 8 attributes as variables and predicts the localisation of protein.
 
 The various attributes are: 
-1. Sequence Name: Accession number for the SWISS-PROT database (not used in the algorithm).
+1. Sequence Name: Accession number for the SWISS-PROT database. (not used in the algorithm)
 2. mcg: McGeoch's method for signal sequence recognition. 
 3. gvh: von Heijne's method for signal sequence recognition. 
 4. alm: Score of the ALOM membrane spanning region prediction program. 
