@@ -1,6 +1,10 @@
+##library statements
+library(caret)
+library(xlsx)
+
 ## Getting data from the database and saving it locally.
 url="http://archive.ics.uci.edu/ml/machine-learning-databases/yeast/yeast.data"
-if(!file.exists("yeast.xlsx")){dir.create("yeast.xlsx")}
+if(!file.exists("yeast.xlsx")){write.xlsx2(data.frame(matrix(ncol=0,nrow=0)),file="yeast.xlsx")}
 download.file(url,"yeast.xlsx")
 
 ## Loading dataset into R.
@@ -36,5 +40,4 @@ knn_fit = train(V19 ~., data = training, method = "knn",
                 preProcess = c("center", "scale"),
                 tuneLength = 10)
 
-plot(knn_fit)
-
+plot(knn_fit)  
