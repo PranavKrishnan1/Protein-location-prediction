@@ -1,6 +1,6 @@
 ## Getting data from the database and saving it locally.
 url="http://archive.ics.uci.edu/ml/machine-learning-databases/yeast/yeast.data"
-if(!file.exists("yeast.data")){dir.create("yeast.xlsx")}
+if(!file.exists("yeast.xlsx")){dir.create("yeast.xlsx")}
 download.file(url,"yeast.xlsx")
 
 ## Loading dataset into R.
@@ -32,9 +32,9 @@ training[["V19"]] = factor(training[["V19"]])
 set.seed(82)
 trctrl = trainControl(method = "repeatedcv", number = 10, repeats = 3)
 knn_fit = train(V19 ~., data = training, method = "knn",
-                 trControl=trctrl,
-                 preProcess = c("center", "scale"),
-                 tuneLength = 10)
+                trControl=trctrl,
+                preProcess = c("center", "scale"),
+                tuneLength = 10)
 
 plot(knn_fit)
 
