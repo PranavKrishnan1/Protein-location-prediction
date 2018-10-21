@@ -4,8 +4,10 @@ if(!file.exists("yeast.data")){dir.create("yeast.xlsx")}
 download.file(url,"yeast.xlsx")
 
 ## Loading dataset into R.
-yeastdata = read.csv("yeast.xlsx",sep = "  ",header = F) ## Unable to set sep ="  "  
-yeastdf=na.omit(yeastdata[c(3,5,7,9,11,13,15,17,19)])    ## as it is larger than a byte
+yeastdata = read.csv("yeast.xlsx",sep = "  ",header = F)
+## Unable to set sep ="  " as it is larger than a byte.
+
+yeastdf=na.omit(yeastdata[c(3,5,7,9,11,13,15,17,19)])
 
 ## Display structure of the dataset
 str(yeastdf)
